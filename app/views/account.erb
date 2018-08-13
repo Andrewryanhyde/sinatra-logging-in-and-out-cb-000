@@ -7,7 +7,9 @@
   </head>
   <body id="page-top">
 
-    <a href="/logout">Log Out</a>
+    <h1>Welcome <%= @this_user.username %></h1>
+   <h3>Your Balance: <%= @this_user.balance %></h3>
+   <a href="/logout">Log Out</a>
 
 
   </body>
