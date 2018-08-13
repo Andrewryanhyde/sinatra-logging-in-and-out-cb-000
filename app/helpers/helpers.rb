@@ -6,5 +6,5 @@ class Helpers
 
   self.is_logged_in?
 
-end
+  end
 end
