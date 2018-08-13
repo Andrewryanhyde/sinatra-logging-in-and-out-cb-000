@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    
+
     if Helpers.is_logged_in?(session)
       @this_user = User.find(session[:user_id])
       erb :account
@@ -33,7 +33,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/logout' do
-
+    session.clear
+    redirect "/"
   end
 
 
